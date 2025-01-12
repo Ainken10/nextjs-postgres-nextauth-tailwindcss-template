@@ -1,0 +1,69 @@
+[
+    {
+        "id": "trip-001",
+        "truckId": "truck-123",
+        "driverId": "driver-456",
+        "startLocation": "New York, NY",
+        "endLocation": "Los Angeles, CA",
+        "startTime": "2025-01-10T08:00:00Z",
+        "endTime": "2025-01-12T20:00:00Z",
+        "cargoDetails": "Electronics",
+        "weight": 15000,
+        "distance": 4500,
+        "status": "completed",
+        "fuelConsumption": 1200,
+        "checkpoints": [
+          {
+            "location": "Chicago, IL",
+            "time": "2025-01-11T12:00:00Z"
+          },
+          {
+            "location": "Denver, CO",
+            "time": "2025-01-12T08:00:00Z"
+          }
+        ]
+      },
+      {
+        "id": "trip-002",
+        "truckId": "truck-789",
+        "driverId": "driver-101",
+        "startLocation": "Houston, TX",
+        "endLocation": "Miami, FL",
+        "startTime": "2025-01-15T09:00:00Z",
+        "cargoDetails": "Frozen Foods",
+        "weight": 8000,
+        "distance": 1500,
+        "status": "planned"
+      },
+      {
+        "id": "trip-003",
+        "truckId": "truck-456",
+        "driverId": "driver-789",
+        "startLocation": "Seattle, WA",
+        "endLocation": "San Francisco, CA",
+        "startTime": "2025-01-11T10:00:00Z",
+        "cargoDetails": "Furniture",
+        "weight": 5000,
+        "distance": 1300,
+        "status": "in-progress",
+        "fuelConsumption": 300,
+        "checkpoints": [
+          {
+            "location": "Portland, OR",
+            "time": "2025-01-11T14:00:00Z"
+          }
+        ]
+      },
+      {
+        "id": "trip-004",
+        "truckId": "truck-999",
+        "driverId": "driver-123",
+        "startLocation": "Las Vegas, NV",
+        "endLocation": "Phoenix, AZ",
+        "startTime": "2025-01-09T08:00:00Z",
+        "cargoDetails": "Construction Materials",
+        "weight": 10000,
+        "distance": 500,
+        "status": "canceled"
+      }
+]
