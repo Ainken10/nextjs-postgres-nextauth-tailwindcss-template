@@ -12,7 +12,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { PlusCircle } from "lucide-react"
  
-export function DialogAdd() {
+export function DialogAdd({ children, title, description }:any) {
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -20,12 +20,12 @@ export function DialogAdd() {
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>Edit profile</DialogTitle>
+          <DialogTitle>{title}</DialogTitle>
           <DialogDescription>
-            Make changes to your profile here. Click save when you're done.
+          {description}
           </DialogDescription>
         </DialogHeader>
-        <div className="grid gap-4 py-4">
+        {/* <div className="grid gap-4 py-4">
           <div className="grid grid-cols-4 items-center gap-4">
             <Label htmlFor="name" className="text-right">
               Name
@@ -46,10 +46,9 @@ export function DialogAdd() {
               className="col-span-3"
             />
           </div>
-        </div>
-        <DialogFooter>
-          <Button type="submit">Save changes</Button>
-        </DialogFooter>
+        </div> */}
+        {children}
+      
       </DialogContent>
     </Dialog>
   )

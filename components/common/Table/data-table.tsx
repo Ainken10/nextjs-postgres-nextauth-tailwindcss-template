@@ -30,6 +30,7 @@ import { DataTableToolbar } from "./data-table-toolbar"
 import { Filter } from "types/filter"
 import { Button } from "@/components/ui/button"
 import { DialogAdd } from "@/components/dialog/create";
+import { TripEdit } from "@/components/Trips/TripEdit";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[]
@@ -85,7 +86,9 @@ export function DataTable<TData, TValue>({
               Export
             </span>
           </Button>
-          <DialogAdd />
+         <DialogAdd title={'teszt'} description={'tesztdesc'}>
+          <TripEdit />
+         </DialogAdd>
         </div>
       </div>
 

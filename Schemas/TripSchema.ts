@@ -1,9 +1,8 @@
 import { z } from "zod"
 
-
 export const truckTripSchema = z.object({
-  id: z.string(),
-  title: z.string(),
+  id: z.string().min(4),
+  title: z.string().min(4),
   truckId: z.string(),
   driverId: z.string(),
   startLocation: z.string(),
